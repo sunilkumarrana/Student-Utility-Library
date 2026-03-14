@@ -9,6 +9,7 @@ Last Updated: February 2026
 """
 
 from typing import List, Any, Dict
+from collections import deque
 
 
 def breadth_first_search(graph: Dict[Any, List[Any]], start: Any) -> List[Any]:

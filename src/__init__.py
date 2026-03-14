@@ -33,7 +33,7 @@ from .string_utils import (
     is_anagram
 )
 
-from .math_utils import (
+from .math_utils import (   
     factorial,
     is_prime,
     gcd,
