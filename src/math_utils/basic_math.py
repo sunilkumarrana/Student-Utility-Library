@@ -115,4 +115,14 @@ def square_root(number: Union[int, float], precision: float = 1e-10) -> float:
     Hint: Use Newton's method: x_new = (x + number/x) / 2
     """
     # TODO: Implement this function
-    pass
+    if number < 0:
+        raise ValueError("Square root is not defined for negative numbers")
+    if number == 0:
+        return 0
+    x = number
+    while True:
+        root = 0.5 * (x + number / x)
+        if abs(root - x) < precision:
+            break
+        x = root
+    return root
